@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js พื้นฐานสำหรับห้องเรียน</title>
+    <!-- นำเข้า A-Frame -->
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <!-- นำเข้า AR.js สำหรับ A-Frame -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    
+    <!-- สร้างฉาก AR -->
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+      
+      <!-- ส่วนจัดการไฟล์ Assets (โหลดโมเดล 3 มิติเตรียมไว้) -->
+      <a-assets>
+        <!-- แนะนำให้ใช้ไฟล์นามสกุล .glb หรือ .gltf -->
+        <a-asset-item id="item-model" src="model/object.glb"></a-asset-item>
+      </a-assets>
+
+      <!-- กำหนด Marker ในที่นี้ใช้ preset แบบ hiro -->
+      <a-marker preset="hiro">
+        
+        <!-- นำโมเดลมาแสดงบน Marker -->
+        <!-- scale คือขนาด x y z, position คือตำแหน่ง, rotation คือการหมุน -->
+        <a-entity 
+          gltf-model="#item-model" 
+          scale="0.5 0.5 0.5" 
+          position="0 0 0" 
+          rotation="0 0 0">
+        </a-entity>
+
+        <!-- หากยังไม่มีไฟล์โมเดล สามารถคอมเมนต์บรรทัดบน แล้วใช้รูปทรงเรขาคณิตทดสอบก่อนได้ -->
+        <!-- <a-box position="0 0.5 0" material="color: red; opacity: 0.8;"></a-box> -->
+
+      </a-marker>
+
+      <!-- เพิ่มกล้อง -->
+      <a-entity camera></a-entity>
+    </a-scene>
+    
+  </body>
+</html>
