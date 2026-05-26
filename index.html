@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AR สื่อการสอน 10 คำศัพท์ สิ่งของรอบตัวและของเล่น</title>
+    <title>AR สื่อการสอน 20 คำศัพท์ สิ่งของรอบตัวและของเล่น</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
@@ -39,6 +39,36 @@
 
         <a-asset-item id="model-10" src="./models/shoes.glb"></a-asset-item>
         <img id="label-10" src="./images/9.jpg" />
+
+        <a-asset-item id="model-11" src="./models/teddy_bear.glb"></a-asset-item>
+        <img id="label-11" src="./images/11.png" />
+
+        <a-asset-item id="model-12" src="./models/robot.glb"></a-asset-item>
+        <img id="label-12" src="./images/12.png" />
+
+        <a-asset-item id="model-13" src="./models/dinosaur.glb"></a-asset-item>
+        <img id="label-13" src="./images/13.png" />
+
+        <a-asset-item id="model-14" src="./models/toy_car.glb"></a-asset-item>
+        <img id="label-14" src="./images/14.png" />
+
+        <a-asset-item id="model-15" src="./models/airplane.glb"></a-asset-item>
+        <img id="label-15" src="./images/15.png" />
+
+        <a-asset-item id="model-16" src="./models/boat.glb"></a-asset-item>
+        <img id="label-16" src="./images/16.png" />
+
+        <a-asset-item id="model-17" src="./models/ball.glb"></a-asset-item>
+        <img id="label-17" src="./images/17.png" />
+
+        <a-asset-item id="model-18" src="./models/clay.glb"></a-asset-item>
+        <img id="label-18" src="./images/18.png" />
+
+        <a-asset-item id="model-19" src="./models/balloon.glb"></a-asset-item>
+        <img id="label-19" src="./images/19.png" />
+
+        <a-asset-item id="model-20" src="./models/kite.glb"></a-asset-item>
+        <img id="label-20" src="./images/20.png" />
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -49,7 +79,7 @@
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 1">
-        <a-gltf-model src="#model-2" position="0 0 0" scale="8 8 8" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>3
+        <a-gltf-model src="#model-2" position="0 0 0" scale="8 8 8" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
         <a-image src="#label-2" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
       </a-entity>
 
@@ -91,6 +121,58 @@
       <a-entity mindar-image-target="targetIndex: 9">
         <a-gltf-model src="#model-10" position="0 0 0" scale="0.7 0.7 0.7" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
         <a-image src="#label-10" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 10">
+        <a-gltf-model src="#model-11" position="0 0 0" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
+        <a-image src="#label-11" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 11">
+        <a-gltf-model src="#model-12" position="0 0 0" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
+        <a-entity>
+          <a-image src="#label-12" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
+        </a-entity>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 12">
+        <a-gltf-model src="#model-13" position="0 0 0" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
+        <a-image src="#label-13" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 13">
+        <a-gltf-model src="#model-14" position="0 0 0" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
+        <a-image src="#label-14" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 14">
+        <a-gltf-model src="#model-15" position="0 0 0" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
+        <a-image src="#label-15" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 15">
+        <a-gltf-model src="#model-16" position="0 0 0" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
+        <a-image src="#label-16" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 16">
+        <a-gltf-model src="#model-17" position="0 0 0" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
+        <a-image src="#label-17" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 17">
+        <a-gltf-model src="#model-18" position="0 0 0" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
+        <a-image src="#label-18" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 18">
+        <a-gltf-model src="#model-19" position="0 0 0" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
+        <a-image src="#label-19" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 19">
+        <a-gltf-model src="#model-20" position="0 0 0" scale="1 1 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"></a-gltf-model>
+        <a-image src="#label-20" position="0 -0.5 0.1" width="1" height="0.5"></a-image>
       </a-entity>
 
     </a-scene>
